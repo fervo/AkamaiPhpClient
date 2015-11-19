@@ -84,7 +84,7 @@ class Client
      * @param array|\stdClass $content
      * @return mixed
      */
-    protected function doHttpRequest($method, $relativeUrl, $content = null)
+    public function doHttpRequest($method, $relativeUrl, $content = null)
     {
         $relativeUrl = ltrim($relativeUrl, '/');
 
